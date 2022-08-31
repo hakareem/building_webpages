@@ -11,9 +11,9 @@ class Application < Sinatra::Base
   end
 
   post '/hello' do
-    if special_chars?  
-     status 400
-     return ''
+    if special_chars? || params[:name].length > 15
+      status 400
+    return ''
     end
 
     @name = params[:name]
