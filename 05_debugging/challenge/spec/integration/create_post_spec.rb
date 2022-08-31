@@ -7,7 +7,6 @@ describe Application do
   include Rack::Test::Methods
 
   # We need to declare the `app` value by instantiating the Application
-  # class so our tests work.
   let(:app) { Application.new }
 
   describe 'Creating a new post' do
