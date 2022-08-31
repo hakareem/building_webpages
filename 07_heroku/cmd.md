@@ -72,4 +72,5 @@ def self.connect
   end
   @connection = PG.connect({ host: '127.0.0.1', dbname: database_name })
 end
+
 ```
